@@ -66,10 +66,10 @@ h1 {
 
 .faceyboi {
 	position: absolute;
-	top: 7vw;
+	top: 7.2vw;
 	left: -7vw;
-	width: 3.85vw;
-	height: 3.85vw;
+	width: 3.9vw;
+	height: 3.9vw;
 	
 	content: url(../assets/faceyboi.svg);
 }
