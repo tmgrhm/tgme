@@ -27,7 +27,7 @@ html {
 
 body {
 	color: #3B447C;
-	background: url(../assets/bg-illu.svg) 140% 140% no-repeat fixed, linear-gradient(45deg, white 0%, #F7F8FC 100%) fixed;
+	background: url(../assets/bg-illu.svg) bottom -100px right -100px no-repeat fixed, linear-gradient(45deg, white 0%, #F7F8FC 100%) fixed;
     font-family: "SF Pro Display", "SF UI Display", "Helvetica Neue", Helvetica, sans-serif;
 	margin: auto 0;
 }
