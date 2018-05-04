@@ -103,24 +103,45 @@ ul.social li {
 	width: 64px;
 	border-radius: 32px;
 	margin: 0 20px 20px 0;
+	
+	transition: all 0.2s ease-out 0s;
+}
+ul.social li:hover {
+	transform: scale(1.1);
 }
 
 li.tasklogue {
 	background: url(../assets/Tasklogue.svg) no-repeat center rgba(136, 125, 230, 0.1);
 }
+li.tasklogue:hover {
+	background: url(../assets/Tasklogue.svg) no-repeat center rgba(136, 125, 230, 0.2);
+}
 
 li.email {
 	background: url(../assets/Email.svg) no-repeat center rgba(230, 125, 193, 0.1);
+}
+li.email:hover {
+	background: url(../assets/Email.svg) no-repeat center rgba(230, 125, 193, 0.2);
 }
 
 li.dribbble {
 	background: url(../assets/Dribbbble.svg) no-repeat center rgba(234, 75, 136, 0.1);
 }
+li.dribbble:hover {
+	background: url(../assets/Dribbbble.svg) no-repeat center rgba(234, 75, 136, 0.2);
+}
 
 li.instagram {
 	background:  url(../assets/Instagram.svg) no-repeat center, linear-gradient(45deg, rgba(188, 97, 218, 0.1) 0%, rgba(87, 125, 255, 0.1) 100%);
 }
+li.instagram:hover {
+	background:  url(../assets/Instagram.svg) no-repeat center, linear-gradient(45deg, rgba(188, 97, 218, 0.2) 0%, rgba(87, 125, 255, 0.2) 100%);
+}
 
 li.twitter {
 	background: url(../assets/Twitter.svg) no-repeat center rgba(29, 160, 242, 0.1);
+}
+li.twitter:hover {
+	background: url(../assets/Twitter.svg) no-repeat center rgba(29, 160, 242, 0.2);
+}
 }
