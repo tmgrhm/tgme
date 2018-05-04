@@ -64,6 +64,16 @@ h1 {
 	  -webkit-text-fill-color: transparent;
 }
 
+.faceyboi {
+	position: absolute;
+	top: 7vw;
+	left: -7vw;
+	width: 3.85vw;
+	height: 3.85vw;
+	
+	content: url(../assets/faceyboi.svg);
+}
+
 h2 {
 	margin: 0;
 	
