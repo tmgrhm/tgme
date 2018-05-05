@@ -24,7 +24,7 @@ html {
 body {
 	color: #3B447C;
 	background: url(../assets/bg-illu.svg) bottom -100px right -100px no-repeat fixed, linear-gradient(45deg, white 0%, #F7F8FC 100%) fixed;
-    font-family: "SF Pro Display", "SF UI Display", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	margin: auto 0;
 }
 
@@ -80,7 +80,7 @@ h1 {
 h2 {
 	margin: 0;
 	
-	font: 2.25em/1.5em "SF Mono", Menlo, "Courier New", Courier, mono;
+	font: 2.25em/1.5em "SF Mono", Menlo, Inconsolata, mono;
 	font-size: 3vw;
 	font-weight: normal;
 	color: #BBBFDB;
@@ -104,7 +104,6 @@ p {
 	
 	font-size: 1em;
 	line-height: 2em;
-	letter-spacing: 0.4px;
 }
 
 ul.social {
