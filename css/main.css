@@ -98,6 +98,9 @@ h2 a:hover {
 	text-decoration: underline;
 	color: #897EE6;
 }
+h2 a:active {
+	color: #ae0000;
+}
 
 p {
 	max-width: 640px;
@@ -127,6 +130,9 @@ ul.social li {
 }
 ul.social li:hover {
 	transform: scale(1.1);
+}
+ul.social li:active {
+	transform: scale(0.9);
 }
 
 li.tasklogue {
