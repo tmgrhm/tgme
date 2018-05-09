@@ -37,15 +37,16 @@ strong {
 }
 
 .wrapper {
-    width: 60%;
+    width: 80%;
 	height: 65%;
-    margin: auto 12%;
+    margin: auto 0 auto 12%;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 }
 
 h1 {
+	width: 56vw;
 	margin: 0;
 	margin-bottom: 75px;
 	
