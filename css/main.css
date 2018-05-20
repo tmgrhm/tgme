@@ -23,13 +23,23 @@ html {
 
 body {
 	color: #3B447C;
-	background: url(../assets/bg-illu.svg) bottom -100px right -100px no-repeat fixed, linear-gradient(45deg, white 0%, #F7F8FC 100%) fixed;
+	background: linear-gradient(to bottom, white 0%, #F7F8FC 100%) fixed;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	margin: auto 0;
 }
 
+body.home {
+	background: url(../assets/bg-illu.svg) bottom -100px right -100px no-repeat fixed, linear-gradient(45deg, white 0%, #F7F8FC 100%) fixed;
+}
+
 a {
 	color: #897EE6;
+	transition: color, background, 0.2s ease-out 0s;
+}
+/* fueled.com link */
+a.fueled:active {
+	color: #ae0000;
+	background: rgba(174, 0, 0, 0.08);
 }
 
 strong {
@@ -45,29 +55,6 @@ strong {
 	bottom: 0;
 }
 
-h1 {
-	width: 56vw;
-	margin: 0;
-	margin-bottom: 75px;
-	
-	font-size:  96px;
-	font-size: 7vw;
-	line-height: 1.2em;
-	font-weight: 800;
-	
-	word-wrap: break-word;
-	overflow: visible;
-	
-	color: #897EE6;
-	/*background: linear-gradient(45deg, #897EE6 0%, #E67EC1 100%);*/
-	background: linear-gradient(90deg, #2B71D9 0%, #8E81FF 50%, #D4B3FF 100%);
-	background-clip: text;
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-	  
-	  /*transition: font-size 0.2s ease-out 0s;*/
-}
-
 .faceyboi {
 	position: absolute;
 	top: 7.4vw;
@@ -78,29 +65,73 @@ h1 {
 	content: url(../assets/faceyboi.svg);
 }
 
+h1 {
+	margin: 0;
+	margin-bottom: 0.5em;
+	
+	font-size:  72px;
+	font-size: 4.7vw;
+	line-height: 1.2em;
+	font-weight: 800;
+	
+	word-wrap: break-word;
+	overflow: visible;
+	
+	color: #BBBFDB;
+}
+header h1 {
+	width: 56vw;
+	margin-bottom: 4vw;
+	
+	font-size:  96px;
+	font-size: 7vw;
+	
+	color: #897EE6;
+	/*background: linear-gradient(45deg, #897EE6 0%, #E67EC1 100%);*/
+	background: linear-gradient(90deg, #2B71D9 0%, #8E81FF 50%, #D4B3FF 100%);
+	background-clip: text;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+}
+
 h2 {
 	margin: 0;
-	
-	font: 2.25em/1.5em "SF Mono", Menlo, Inconsolata, mono;
-	font-size: 3vw;
+	margin-bottom: 0.35em;
+	font: 1.5em/1.2em "SF Mono", Menlo, Inconsolata, mono;
 	font-weight: normal;
 	color: #BBBFDB;
 	
 	/*transition: font-size 0.2s ease-out 0s;*/
 }
+header h2 {
+	font: 2.25em/1.5em;
+	font-size: 3vw;
+}
 
 h2 a {
 	text-decoration: none;
 	color: inherit;
-	
-	transition: color 0.2s ease-out 0s;
 }
 h2 a:hover {
-	text-decoration: underline;
 	color: #897EE6;
+	background: rgba(136, 125, 230, 0.14);
 }
-h2 a:active {
-	color: #ae0000;
+h2 a::after {
+	content: " ↗";
+	color: #BBBFDB;
+}
+
+h3 {
+	color: #0B1136;
+	font-weight: 800;
+	font-size: 1.5em;
+	line-height: 1.2em;
+}
+
+h5 {
+	text-transform: uppercase;
+	/*font-variant: small-caps;*/
+	color: #BBBFDB;
 }
 
 p {
@@ -110,6 +141,22 @@ p {
 	line-height: 2em;
 }
 
+ul {
+	padding: 0;
+	margin: 0;
+	margin-top: 0.4em;
+}
+
+ul li {
+	list-style: none;
+	color: #0B1136;
+	font-size: 0.9em;
+	padding-bottom: 1em;
+}
+
+ /**********
+ * social *
+**********/
 ul.social {
 	margin-top: 10vh;
 	padding: 0;
@@ -136,37 +183,110 @@ ul.social li:active {
 	transform: scale(0.9);
 }
 
-li.tasklogue {
+li#tasklogue {
 	background: url(../assets/Tasklogue.svg) no-repeat center rgba(136, 125, 230, 0.1);
 }
-li.tasklogue:hover {
+li#tasklogue:hover {
 	background: url(../assets/Tasklogue.svg) no-repeat center rgba(136, 125, 230, 0.2);
 }
 
-li.email {
+li#email {
 	background: url(../assets/Email.svg) no-repeat center rgba(230, 125, 193, 0.1);
 }
-li.email:hover {
+li#email:hover {
 	background: url(../assets/Email.svg) no-repeat center rgba(230, 125, 193, 0.2);
 }
 
-li.dribbble {
+li#dribbble {
 	background: url(../assets/Dribbbble.svg) no-repeat center rgba(234, 75, 136, 0.1);
 }
-li.dribbble:hover {
+li#dribbble:hover {
 	background: url(../assets/Dribbbble.svg) no-repeat center rgba(234, 75, 136, 0.2);
 }
 
-li.instagram {
+li#instagram {
 	background:  url(../assets/Instagram.svg) no-repeat center, linear-gradient(45deg, rgba(188, 97, 218, 0.1) 0%, rgba(87, 125, 255, 0.1) 100%);
 }
-li.instagram:hover {
+li#instagram:hover {
 	background:  url(../assets/Instagram.svg) no-repeat center, linear-gradient(45deg, rgba(188, 97, 218, 0.2) 0%, rgba(87, 125, 255, 0.2) 100%);
 }
 
-li.twitter {
+li#twitter {
 	background: url(../assets/Twitter.svg) no-repeat center rgba(29, 160, 242, 0.1);
 }
-li.twitter:hover {
+li#twitter:hover {
 	background: url(../assets/Twitter.svg) no-repeat center rgba(29, 160, 242, 0.2);
 }
+
+li#cv {
+	background: url(../assets/cv.svg) center no-repeat rgba(133, 141, 153, 0.1);
+}
+li#cv:hover {
+	background: url(../assets/cv.svg) center no-repeat rgba(133, 141, 153, 0.2);
+}
+
+
+  /**********
+    * cv *
+ **********/
+ .cv {
+ 	font-size: large;
+ }
+ 
+ .cv div {
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	padding-right: 1vw;
+ }
+ 
+ .cv section {
+ 	min-width: 40%;
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	padding-right: 1vw;
+ }
+ 
+ .cv section h1 {
+ 	padding-top: 4vh;
+ }
+ 
+ .cv h3 {
+ 	max-width: 90%;
+ }
+ 
+ .cv h3, .cv h4, .cv h5 {
+ 	margin: 0.5em 0 0.5em 0;
+ }
+ 
+ .cv ul {
+ 	display: inline-block;
+ }
+ 
+ /* experience */
+ .cv .experience section {
+ 	max-width: 640px;
+ }
+ .cv .experience ul li {
+ 	display: inline-block;
+ }
+ .cv .experience ul li::after {
+ 	content: ",";
+ }
+ .cv .experience ul li:last-of-type::after {
+ 	content: "";
+ }
+ 
+ /* skills */
+ .cv .skills ul {
+ 	width: 15em;
+ }
+  
+ .cv .skills ul li small {
+ 	display: block;
+ 	font-size: inherit;
+ 	font-size: small;
+ 	line-height: 1.5em;
+ 	color: #BBBFDB;
+ 	/*text-transform: uppercase;*/
+ 	font-weight: 500;
+ }
