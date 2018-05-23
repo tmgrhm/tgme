@@ -12,12 +12,11 @@ html {
 }
 
 ::-moz-selection {
-    background: #897EE6;
+    background: rgba(136, 125, 230, 0.2);
     text-shadow: none;
 }
-
 ::selection {
-    background: #897EE6;
+    background: rgba(136, 125, 230, 0.2);
     text-shadow: none;
 }
 
@@ -35,6 +34,12 @@ body.home {
 a {
 	color: #897EE6;
 	transition: color, background, 0.2s ease-out 0s;
+}
+a:hover {
+	transform: scale(1.05);
+}
+a:active {
+	transform: scale(0.9);
 }
 /* fueled.com link */
 a.fueled:active {
@@ -60,7 +65,7 @@ strong {
 	height: 3.8vw;
 	
 	position: absolute;
-	top: 6vw;
+	top: 4.8vw;
 	left: -8.4vw;
 	padding: 1.4vw;
 	
@@ -69,13 +74,13 @@ strong {
 	content: url(../assets/faceyboi.svg);
 	background: rgba(43, 112, 217, 0.04);
 	
-	transition: top, left, padding, transform, background, 0.1s ease-in-out 0s;
+	transition: transform, background, 0.2s ease-out 0s;
 }
 a:hover .faceyboi {
 	color: #fff;
 	background: rgba(43, 112, 217, 0.18);
 	
-	top: 5.4vw;
+	top: 4.2vw;
 	left: -9vw;
 	padding: 2vw;
 	
@@ -87,8 +92,7 @@ a:active .faceyboi {
 }
 
 h1 {
-	margin: 0;
-	margin-bottom: 0.5em;
+	margin: 0.5em 0;
 	
 	font-size:  72px;
 	font-size: 4.7vw;
@@ -102,7 +106,8 @@ h1 {
 }
 header h1 {
 	width: 56vw;
-	margin-bottom: 4vw;
+	margin: 0;
+	/*margin-bottom: 4vw;*/
 	
 	font-size:  96px;
 	font-size: 7vw;
@@ -116,8 +121,8 @@ header h1 {
 }
 
 h2 {
-	margin: 0;
-	margin-bottom: 0.35em;
+	margin: 0.5em 0;
+	
 	font: 1.5em/1.2em "SF Mono", Menlo, Inconsolata, mono;
 	font-weight: normal;
 	color: #C1C4DB;
@@ -125,6 +130,8 @@ h2 {
 	/*transition: font-size 0.2s ease-out 0s;*/
 }
 header h2 {
+	margin: 0em;
+	
 	font: 2.25em/1.5em;
 	font-size: 3vw;
 }
@@ -175,19 +182,21 @@ ul li {
 	padding-bottom: 1em;
 }
 
+footer {
+	padding: 10vh 0;
+}
+
  /**********
  * social *
 **********/
 ul.social {
-	margin-top: 10vh;
-	padding: 0;
 	font-size: 0;
 }
 
 ul.social li {
 	display: inline-block;
-	width: 4vw;
-	height: 4vw;
+	width: 5vw;
+	height: 5vw;
 	min-height: 44px;
 	min-width: 44px;
 	max-height: 72px;
@@ -212,10 +221,10 @@ li#tasklogue:hover {
 }
 
 li#email {
-	background: url(../assets/Email.svg) no-repeat center rgba(230, 125, 193, 0.1);
+	background: url(../assets/Email.svg) no-repeat center rgba(136, 125, 230, 0.1);
 }
 li#email:hover {
-	background: url(../assets/Email.svg) no-repeat center rgba(230, 125, 193, 0.2);
+	background: url(../assets/Email.svg) no-repeat center rgba(136, 125, 230, 0.2);
 }
 
 li#dribbble {
@@ -246,6 +255,42 @@ li#cv:hover {
 	background: url(../assets/cv.svg) center no-repeat rgba(133, 141, 153, 0.2);
 }
 
+a.button#email::before {
+	content: url(../assets/Email.svg);
+	padding-right: 0.5em;
+	padding-top: 0.2em; /* dropped to sit with text's x-height/baseline */
+}
+a.button {
+	background: rgba(136, 125, 230, 0.1);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 8pt;
+	
+	height: 3vw;
+	width: 9vw;
+	min-height: 48pt;
+	min-width: 122pt;
+	max-height: 40pt;
+	border-radius: 6pt;
+	
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	color: rgba(136, 125, 230, 1);
+	
+	transition: all 0.2s ease-out 0s;
+}
+a.button:hover {
+	background: rgba(136, 125, 230, 0.2);
+	padding: 2pt 12pt;
+	margin: -2pt -4pt;
+}
+a.button:active {
+	background: rgba(136, 125, 230, 0.4);
+}
 
   /**********
     * cv *
@@ -267,16 +312,16 @@ li#cv:hover {
  	padding-right: 1vw;
  }
  
- .cv section h1 {
+ /*.cv section h1 {
  	padding-top: 4vh;
- }
+ }*/
  
  .cv h3 {
  	max-width: 90%;
  }
  
  .cv h3, .cv h4, .cv h5 {
- 	margin: 0.5em 0 0.5em 0;
+ 	margin: 0.5em 0;
  }
  
  .cv ul {

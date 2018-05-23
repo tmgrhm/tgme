@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+<svg width="28px" height="18px" viewBox="0 0 28 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
     <title>Email</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="@tomgraham.me" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD" transform="translate(-288.000000, -847.000000)" fill="#E67EC1" fill-rule="nonzero">
-            <g id="Group" transform="translate(268.000000, 823.000000)">
-                <path d="M33.0191429,33.2675 C32.4482857,33.7875 31.5517143,33.7875 30.98,33.2675 L21.3174286,24.5 L42.6825714,24.5 L33.0191429,33.2675 Z M26.7765714,31.7333333 L20,38.3216667 L20,25.5841667 L26.7765714,31.7333333 Z M37.2234286,31.7333333 L44,25.5841667 L44,38.3216667 L37.2234286,31.7333333 Z M35.9694286,32.8708333 L42.788,39.5 L21.212,39.5 L28.0288571,32.8708333 L29.8091429,34.4858333 C30.4237143,35.0433333 31.2114286,35.3216667 31.9991429,35.3216667 C32.7868571,35.3216667 33.5745714,35.0433333 34.1891429,34.4858333 L35.9694286,32.8708333 Z" id="Email"></path>
+        <g id="Desktop-HD" transform="translate(-454.000000, -846.000000)">
+            <g id="Social" transform="translate(184.000000, 823.000000)">
+                <g id="Group" transform="translate(252.000000, 0.000000)">
+                    <g id="Email" transform="translate(19.000000, 24.000000)">
+                        <rect id="Rectangle-11" fill="#FFFFFF" x="0" y="0" width="26" height="16" rx="1.08333333"></rect>
+                        <path d="M14.1040714,9.352 C13.4856429,9.90666667 12.5143571,9.90666667 11.895,9.352 L1.42721429,0 L24.5727857,0 L14.1040714,9.352 Z M7.34128571,7.71555556 L0,14.7431111 L0,1.15644444 L7.34128571,7.71555556 Z M18.6587143,7.71555556 L26,1.15644444 L26,14.7431111 L18.6587143,7.71555556 Z M17.3002143,8.92888889 L24.687,16 L1.313,16 L8.69792857,8.92888889 L10.6265714,10.6515556 C11.2923571,11.2462222 12.1457143,11.5431111 12.9990714,11.5431111 C13.8524286,11.5431111 14.7057857,11.2462222 15.3715714,10.6515556 L17.3002143,8.92888889 Z" stroke-opacity="0.04" stroke="#000000" fill="#897EE6" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
             </g>
         </g>
     </g>
