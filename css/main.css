@@ -92,7 +92,8 @@ a:active .faceyboi {
 }
 
 h1 {
-	margin: 0.5em 0;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
 	
 	font-size:  72px;
 	font-size: 4.7vw;
@@ -107,7 +108,7 @@ h1 {
 header h1 {
 	width: 56vw;
 	margin: 0;
-	/*margin-bottom: 4vw;*/
+	margin-bottom: 4vw;
 	
 	font-size:  96px;
 	font-size: 7vw;
@@ -255,18 +256,25 @@ li#cv:hover {
 	background: url(../assets/cv.svg) center no-repeat rgba(133, 141, 153, 0.2);
 }
 
-a.button#email::before {
-	content: url(../assets/Email.svg);
-	padding-right: 0.5em;
-	padding-top: 0.2em; /* dropped to sit with text's x-height/baseline */
+/* buttons */
+
+div.buttons {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-self: center;
+	align-content: center;
 }
+
 a.button {
 	background: rgba(136, 125, 230, 0.1);
 	
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0 8pt;
+	padding: 0 1em;
+	margin-bottom: 1em;
 	
 	height: 3vw;
 	width: 9vw;
@@ -285,12 +293,40 @@ a.button {
 }
 a.button:hover {
 	background: rgba(136, 125, 230, 0.2);
-	padding: 2pt 12pt;
-	margin: -2pt -4pt;
+	/*padding: 2pt 12pt;
+	margin: -2pt -4pt;*/
 }
 a.button:active {
 	background: rgba(136, 125, 230, 0.4);
 }
+
+a.button.icon-left::before {
+	margin-right: 0.5em;
+	padding: 0;
+	padding-top: 0.2em;  /*dropped to sit with text's x-height/baseline */
+}
+
+/* button specifics */
+a.button.icon-left#email::before {
+	content: url(../assets/Email.svg);
+}
+
+a.button#dribbble {
+	color: rgba(234, 75, 136, 1);
+	background: rgba(234, 75, 136, 0.1);
+}
+a.button.icon-left#dribbble::before {
+	content: url(../assets/Dribbbble.svg);
+}
+
+a.button#twitter {
+	color: rgba(29, 160, 242, 1);
+	background: rgba(29, 160, 242, 0.1);
+}
+a.button.icon-left#twitter::before {
+	content: url(../assets/Twitter.svg);
+}
+
 
   /**********
     * cv *
@@ -299,25 +335,30 @@ a.button:active {
  	font-size: large;
  }
  
+ .cv section {
+ 	min-width: 33%;
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	padding-right: 2vw;
+ }
+ 
  .cv section div {
  	display: inline-block;
  	vertical-align: top;
  	padding-right: 1vw;
  }
  
- .cv section {
- 	min-width: 40%;
- 	display: inline-block;
- 	vertical-align: top;
- 	padding-right: 1vw;
+ .cv section#CTA {
+	/*margin-top: 2em;*/
+	/*padding-top: 0.2em; /*offset to match text's x-height/baseline*!/*/
+	padding-bottom: 10vh;
+	
+	font-size:  72px;
+	font-size: 4.7vw;
  }
  
- /*.cv section h1 {
- 	padding-top: 4vh;
- }*/
- 
  .cv h3 {
- 	max-width: 90%;
+ 	max-width: 30em;
  }
  
  .cv h3, .cv h4, .cv h5 {
